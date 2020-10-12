@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat";
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*BANNER*/
+
+.banner {
+    width: 100%;
+    height:250px;
+    background-image: url("../img/sbanner.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+
+.banner h1 {
+    font-size: 25pt;
+    text-transform: uppercase;
+    text-align:  start;
+    margin: auto 0 0 20px;
+
+}
+
+/*CONTACTO*/
+
+.contactos {
+    min-height: 800%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.contactos h1 {
+    height: 100%;
+    text-transform: uppercase;
+    font-size: 15pt;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
+.contactos p {
+    max-width: 800px;
+    margin-bottom: 35px; 
+    color: #000; 
+    text-align: left;
+}
+
+.conteudo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    .conteudo{
+        width: 320px;
+        flex-direction: column;
+    }
+}
+
+
+
+
+.rede {
+    width: 400px;
+    height: 300px;
+    margin-right: 10px;
+    color: #000000;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+div.facebook {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px auto ;
+    box-sizing: border-box;
+    background-image: url(../img/facebook.png);
+    background-position: center;
+    background-size: cover;
+}
+
+div.insta {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20px auto ;
+    box-sizing: border-box;
+    background-image: url(../img/instagram.png);
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 700px) {
+    .rede {
+        width: 320px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        margin: auto;
+
+
+    }
+}
+
+.contactos form{
+   width: 600px;
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   padding: 20px 20px;
+   
+
+}
+
+@media (max-width: 700px) {
+    .contactos form {
+        width: 300px;
+        margin: auto;
+        padding: 20px 20px;
+    }
+}
+
+form input {
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    flex: 1;
+}
+
+textarea {
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    flex: 1;
+}
+
+
+#enviar {
+    width: 100px;
+    padding: 10px 15px;
+    background-color: #e5782c;
+    text-transform: uppercase; 
+    border-radius: 4px;
+    margin: 30px  0 30px auto;
+    border: solid 2px #ffffff;
+    margin-right: 15px;
+}
+
+
+
+/*RODAPÉ*/
+.rodape {
+    display: flex;
+    flex-direction: column ;
+    background-color: #000000;
+}
+
+.address {
+   display: flex;
+   padding: 10px;
+   flex-direction: column;
+   justify-content: space-around;
+
+}
+.rodape h3 {
+   text-align: center;
+   font-size: 12pt;
+   color: #ffffff;
+   padding: 10px;
+}
+
+.rodape p {
+   text-align: center;
+   font-size: 10pt;
+   color: rgb(185, 184, 184);
+   line-height: 20px;
+}
+
+.social {
+   display: flex;
+   justify-content: center;
+   background-color: #000000;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+
+.redes img{
+   width: 35px;
+   height: 35px;
+   border-radius: 50px;
+   padding: 10px;
+   margin: 20px 0 20px 0;
+   background-color: #e5782c;
+}
+
+@media (min-width: 768px) {
+   
+   .address {
+       flex-direction: row;
+   }
+   .social {
+       flex-direction: row;
+   }
+   .redes img{
+    margin: 20px 20px 20px 0;
+   } 
+}
+
+.coprigth {
+    width: 100%;
+    background-color: #000000;
+}
+
+.coprigth p{
+    font-family: helvetica;
+    font-size: 11pt;
+    text-align: center;
+    padding: 5px;
+    color: aliceblue;
+}
